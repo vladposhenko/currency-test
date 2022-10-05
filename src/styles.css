@@ -2,3 +2,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header {
+  -webkit-box-shadow: 13px 6px 51px -15px rgba(0,0,0,0.61);
+  -moz-box-shadow: 13px 6px 51px -15px rgba(0,0,0,0.61);
+  box-shadow: 13px 6px 51px -15px rgba(0,0,0,0.61);
+  align-items: center;
+}
+
+.wrapper {
+  padding-top: 5rem;
+  -webkit-box-shadow: 13px 6px 51px -15px rgba(0,0,0,0.61);
+  -moz-box-shadow: 13px 6px 51px -15px rgba(0,0,0,0.61);
+  box-shadow: 13px 6px 51px -15px rgba(0,0,0,0.61);
+  align-items: center;
+}
+
+
+@media (max-width: 680px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}

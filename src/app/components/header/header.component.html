@@ -1,5 +1,5 @@
-<header class="h-20 border-b-2 flex justify-end p-4">
-  <ul class="flex-col">
-    <li *ngFor="let curr of headerCurrencies">1 {{ curr.cc }}: {{ curr.rate.toFixed(2) }} UAH</li>
+<header class="header h-20 border-b-2 flex justify-center p-4">
+  <ul class="flex flex-row gap-20">
+    <li *ngFor="let curr of headerCurrencies">1 {{ curr.cc }}: {{ curr.rate.toFixed(3) }} UAH</li>
   </ul>
 </header>

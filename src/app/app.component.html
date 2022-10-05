@@ -1,6 +1,7 @@
 <div class="text-center">
   <app-header [headerCurrencies]="headerCurrencies"></app-header>
-  <div class="flex justify-center gap-20 mt-20 border-b-2 pb-20">
+  <h1 class="mt-20 font-bold text-4xl">Currency Converter</h1>
+  <div class="wrapper flex justify-center gap-20 mt-20 border-b-2 pb-20">
     <app-currency-row
       [countRate]="countRate"
       [amount]="fromAmount"
@@ -18,7 +19,6 @@
       (handleCurrency)="handleChangeToCurrency($event)"
     ></app-currency-row>
   </div>
-
 </div>
 
 

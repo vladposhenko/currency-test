@@ -62,7 +62,6 @@ export class AppComponent implements OnInit{
 
 
   handleFromAmountChange(value: string) {
-    debugger;
     this.amountInFromCurrency = true
     if(+value < 0) {
       this.amount = 0
