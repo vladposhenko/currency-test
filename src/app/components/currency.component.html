@@ -1,0 +1,7 @@
+<div>
+  <input type="text" >
+  <select #currencySelect  (change)="onSelect()">
+    <option *ngFor="let curr of currency"
+    >{{ curr.txt }}</option>
+  </select>
+</div>
