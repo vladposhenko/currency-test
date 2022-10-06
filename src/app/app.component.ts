@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {ICurrency} from "./models/currency";
 import {CurrenciesService} from "./services/currencies.service";
 @Component({
@@ -31,7 +31,6 @@ export class AppComponent implements OnInit{
       cc:"USD",
       exchangedate:"04.10.2022"
     }
-
     this.toCurrency = {
       r030:978,
       txt:"Євро",
@@ -59,7 +58,6 @@ export class AppComponent implements OnInit{
       }
     }
   }
-
 
   handleFromAmountChange(value: string) {
     this.amountInFromCurrency = true

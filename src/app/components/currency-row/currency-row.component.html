@@ -5,12 +5,11 @@
       disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
     "
     [value]="amount"
-    #newToRateInput
+    [formControl]="amountControl"
     type="number"
-    (input)="handleAmount.emit(newToRateInput.value)"
   >
-  <select class="mt-10" #currencyToSelect (change)="handleCurrency.emit(currencyToSelect.selectedOptions[0].value)">
-    <option [ngValue]="selectedCurrency.txt">{{ selectedCurrency.txt }}</option>
+  <select class="mt-10" [formControl]="currencyControl" >
+    <option>{{ selectedCurrency.txt }}</option>
     <option
       *ngFor="let curr of currencies"
       [value]="curr.txt">{{ curr.txt }}</option>

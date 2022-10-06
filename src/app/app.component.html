@@ -3,7 +3,6 @@
   <h1 class="mt-20 font-bold text-4xl">Currency Converter</h1>
   <div class="wrapper flex justify-center gap-20 mt-20 border-b-2 pb-20">
     <app-currency-row
-      [countRate]="countRate"
       [amount]="fromAmount"
       [currencies]="currencies"
       [selectedCurrency]="fromCurrency"
@@ -11,7 +10,6 @@
       (handleCurrency)="handleChangeFromCurrency($event)"
     ></app-currency-row>
     <app-currency-row
-      [countRate]="countRate"
       [amount]="toAmount"
       [currencies]="currencies"
       [selectedCurrency]="toCurrency"
