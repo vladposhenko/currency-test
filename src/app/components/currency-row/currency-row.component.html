@@ -10,8 +10,6 @@
   >
   <select class="mt-10" [formControl]="currencyControl" >
     <option>{{ selectedCurrency.txt }}</option>
-    <option
-      *ngFor="let curr of currencies"
-      [value]="curr.txt">{{ curr.txt }}</option>
+    <option *ngFor="let curr of currencies">{{ curr.txt }}</option>
   </select>
 </div>

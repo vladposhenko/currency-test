@@ -20,12 +20,8 @@ export class CurrencyRowComponent implements OnInit {
   ngOnInit(): void {
     this.amountControl = new FormControl("0")
     this.currencyControl = new FormControl(this.selectedCurrency.txt)
-    this.amountControl.valueChanges.subscribe(value => {
-      this.onChangeAmount(value)
-    })
-    this.currencyControl.valueChanges.subscribe(value => {
-      this.onChangeCurrency(value)
-    })
+    this.amountControl.valueChanges.subscribe(value => this.onChangeAmount(value))
+    this.currencyControl.valueChanges.subscribe(value => this.onChangeCurrency(value))
   }
 
   onChangeAmount (value:string) {
