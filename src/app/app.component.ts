@@ -20,8 +20,8 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     this.currenciesService.getCurrencies().subscribe(currency => {
       this.currencies = currency
-      this.countRate()
       this.getHeaderCurrency()
+      this.countRate()
     })
 
     this.fromCurrency =  {
